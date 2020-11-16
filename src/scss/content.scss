@@ -1,4 +1,4 @@
-@import "scroll.scss";
+// @import "scroll.scss";
 
 .content {
   display: flex;
@@ -25,6 +25,12 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     font-weight: bold;
+  }
+
+  &__arrow {
+    position: relative;
+    left: 30px;
+    top: 50px;
   }
 }
 
