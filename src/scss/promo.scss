@@ -1,0 +1,14 @@
+@import "header.scss";
+@import "content.scss";
+
+.promo {
+ max-height: 100vh;
+ padding-bottom: 85px;
+
+  &__background {
+    position: absolute;
+    left: 0;
+    height: 90%;
+    z-index: -1;
+  }
+}

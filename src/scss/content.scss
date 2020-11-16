@@ -1,0 +1,93 @@
+@import "scroll.scss";
+
+.content {
+  display: flex;
+  padding: 40px 0;
+
+  align-items: center;
+}
+
+.left-side {
+
+  &__title {
+    font-size: 80px;
+    font-family: "Rubik Mono One", sans-serif;
+    word-wrap: normal;
+    letter-spacing: 0.08em;
+  }
+  
+  &__subtitle {
+    margin-top: 20px;
+    width: 50%;
+
+    line-height: 1.5em;
+    font-size: 20px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.right-side {
+  display: flex;
+
+  &__picture {
+    position: relative;
+    right: 270px;
+    height: 750px;
+    z-index: -1;
+  }
+
+  &__video {
+    position: relative;
+    top: 40px;
+    left: -115px;
+    display: inline-block;
+    
+    &--text {
+      width: 50%;
+      position: relative;
+      top: 80px;
+      left: -150px;
+      float: left;
+      transform: rotate(-90deg);
+      display: flex;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        right: 50px;
+        height: 20px;
+        width: 70px;
+        border-left: 1px solid #cdcdcd;
+        border-bottom: 1px solid #cdcdcd;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 19px;
+        right: 50px;
+        height: 3px;
+        width: 3px;
+        background-color: #CDCDCD;
+        border-radius: 50%;
+      }
+    }
+    
+    &--button {
+      position: relative;
+      top: 15px;
+
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

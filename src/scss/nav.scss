@@ -1,0 +1,28 @@
+.nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    
+    &:first-child {
+      
+      &::after {
+        content: '';
+        position: relative;
+        right: 10px;
+        display: block;
+        width: 20px;
+        height: 1px;
+        background-color: #3a30f8;
+      }
+    }
+  }
+}

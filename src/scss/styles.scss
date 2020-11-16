@@ -1,0 +1,40 @@
+@import "container.scss";
+@import "promo.scss";
+@import "description.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.description {
+
+  // .description__advantages
+
+  &__advantages {
+  }
+
+  // .description__characteristics
+
+  &__characteristics {
+  }
+}
+.footer {
+
+  // .footer__for-whom
+
+  &__for-whom {
+  }
+}
