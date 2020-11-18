@@ -50,7 +50,7 @@
 		<main class="description container">
       <section class="description__advantages advantages" id="advantages">
         <figure class="advantages__img">
-          <img src="src/images/advantages-picture.png">
+          <img src="src/images/advantages-picture.png" class="advantages__img--pic">
           <button class="advantages__play-video">
             <img src="src/images/advantages-play.svg">
           </button>
@@ -59,7 +59,7 @@
         <div class="advantages__text text">
           <div class="text__design design">
             <h4 class="text__name">ПРЕИМУЩЕСТВА</h4>
-            <h2 class="design__title">ДИЗАЙН</h2>
+            <h3 class="design__title">ДИЗАЙН</h3>
             <ul class="design__subtitle-list subtitle-list">
               <li class="subtitle-list__item">Внешний вид скутера дышит идеями футуризма:</li>
               <li class="subtitle-list__item">плавные линии</li>
@@ -68,7 +68,7 @@
             </ul>
           </div>
           <div class="text__color color">
-            <h2 class="color__title">ЦВЕТ</h2>
+            <h3 class="color__title">ЦВЕТ</h3>
             <p class="color__subtitle">Модель представлена сразу в нескольких цветах.</p>
             <div class="color__rounds rounds">
               <div class="rounds__item rounds__item--yellow"></div>
@@ -86,11 +86,64 @@
           </div>
         </div>
       </section>
-      <section class="description__characteristics" id="characteristics"></section>
+      <section class="description__characteristics characteristics" id="characteristics">
+        <div class="characteristics__modes modes">
+          <h3 class="modes__title">РЕЖИМЫ</h3>
+          <ul class="modes__subtitle-list subtitle-list">
+            <li class="subtitle-list__item">Помимо «умной» подсветки, <strong>Hovertrax4.0</strong>
+              снабжён двумя скоростными режимами.</li>
+            <li class="subtitle-list__item">Один для продвинутых пользователей</li>
+            <li class="subtitle-list__item">Второй для новичков</li>
+          </ul>
+          <div class="modes__features features">
+            <div class="features__speed speed">
+              <div class="speed__number">
+                <h2 class="speed__number speed__number--digit">13</h2>
+                <p class="speed__number speed__number--text">км/ч</p>
+              </div>
+              <p class="speed__text">Максимальная скорость</p>
+            </div>
+            <div class="features__speed speed">
+              <h2 class="speed__number speed__number--digit">2</h2>
+              <p class="speed__text">Скоростных режима</p>
+            </div>
+          </div>
+        </div>
+        <div class="characteristics__right-side right-side">
+          <div class="right-side__video">
+            <p class="right-side__video right-side__video--text">cмотреть видео</p>
+            <button class="right-side__video right-side__video--button">
+              <img src="src/images/play-video.svg">
+            </button>
+          </div>
+          <img src="src/images/modes-picture.png" class="right-side__picture">
+        </div>
+      </section>
     </main>
 
-		<footer class="footer container">
-      <article class="footer__for-whom" id="for-whom"></article>
+		<footer class="footer">
+      <div class="container">
+        <article class="footer__for-whom for-whom" id="for-whom">
+          <h3 class="for-whom__title">ДЛЯ КОГО</h3>
+          <p class="for-whom__text">
+            При максимально выдерживаемой 
+            нагрузке в 100 кг отлично подойдёт, 
+            как для подрастающего поколения, 
+            так и для более взрослых «наездников».
+          </p>
+          <p class="for-whom__text">
+            Это единственный гироскутер со 
+            специальным детским режимом 
+            езды.
+          </p>
+          <button class="for-whom__button">перейти в каталог</button>
+        </article>
+        <img src="src/images/footer-picture.png" class="footer__picture">
+        <img src="src/images/promo-background.png" class="footer__background">
+      </div>
+      <div class="footer__copyrights">
+        <p class="footer__copyrights footer__copyrights--text">© All rights reserved, 2017</p>
+      </div>
     </footer>
     
     <div class="container__scroll scroll">

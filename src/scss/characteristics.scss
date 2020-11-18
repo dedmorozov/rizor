@@ -1,0 +1,97 @@
+.characteristics {
+  display: flex;
+  padding-top: 400px;
+  align-items: center;
+
+  &__right-side {
+    position: relative;
+    left: 300px;
+  }
+}
+
+.modes {
+  // padding-top: 50px;
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: "Rubik Mono One", sans-serif;
+    letter-spacing: 0.08em;
+  }
+
+  &__subtitle-list {
+    width: 370px;
+  }
+
+  &__features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.speed {
+  padding-top: 90px;
+  line-height: 1.5;
+  &__number {
+    display: flex;
+    align-items: baseline;
+    color: #3a30f8;
+    font-family: "Rubik Mono One", sans-serif;
+    
+    &--digit {
+      font-size: 60px;
+    }
+  }
+
+  &__text {
+    width: 50%;
+    font-weight: 300;
+    color: #666;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .characteristics {
+    padding-top: 60px;
+
+    &__right-side {
+      top: 0;
+    }
+  }
+
+  .right-side {
+
+    &__video {
+
+      &--button {
+        position: absolute;
+        left: -200px;
+      }
+    }
+  }
+
+  .speed {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .characteristics {
+    padding-top: 40px;
+  }
+
+  .modes {
+    
+    &__title {
+      font-size: 28px;
+    }
+  }
+
+  .speed {
+    line-height: normal;
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

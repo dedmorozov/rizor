@@ -1,6 +1,18 @@
 @import "advantages.scss";
+@import "characteristics.scss";
 
 .description {
-  padding: 200px 0 85px;
-  height: 100vh;
+  padding: 200px 0 240px;
+}
+
+@media screen and (max-width: 769px) {
+  .description {
+    padding: 200px 20px 100px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .description {
+    padding: 200px 20px 60px;
+  }
 }

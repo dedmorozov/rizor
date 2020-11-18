@@ -20,7 +20,7 @@
     width: 80%;
     position: absolute;
     top: 180px;
-    right: -600px;
+    right: -830px;
     transform: rotate(-90deg);
     text-align: right;
     font-size: 172px;
@@ -32,11 +32,11 @@
 }
 
 .text {
-  margin-left: 100px;
+  padding-left: 100px;
   display: flex;
 
   &__name {
-    margin: 100px 0;
+    margin: 100px 0 80px;
     font-size: 20px;
     color: #3a30f8;
     letter-spacing: 0.08em;
@@ -47,7 +47,7 @@
 .design {
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 40px;
     font-family: "Rubik Mono One", sans-serif;
     letter-spacing: 0.08em;
@@ -55,10 +55,10 @@
 }
 
 .subtitle-list {
-  width: 265px;
+  width: 275px;
 
   &__item {
-    margin: 10px 0;
+    margin: 15px 0;
     line-height: 30px;
     font-size: 18px;
     font-weight: 300;
@@ -66,7 +66,7 @@
 
     &:not(:first-child)::before {
       content: "";
-      margin-right: 8px;
+      margin-right: 15px;
       display: inline-block;
       width: 30px;
       height: 5px;
@@ -76,12 +76,12 @@
 }
 
 .color {
-  padding-left: 100px;
+  padding-left: 60px;
   position: relative;
-  top: 450px;
+  top: 470px;
 
   &__title {
-    margin: 0 0 40px 100px;
+    margin: 0 0 20px 100px;
     font-size: 40px;
     font-family: "Rubik Mono One", sans-serif;
     letter-spacing: 0.08em;
@@ -126,5 +126,132 @@
     &--black {
       background-color: #0c0c0c;
     } 
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .advantages {
+    left: 0;
+    padding: 0 20px;
+    flex-direction: column;
+    height: 100%;
+
+    &__img {
+      order: 2;
+      top: -3px;
+      position: relative;
+
+      &--pic {
+        width: 120%;
+        object-fit: cover;
+        height: 300px;
+        position: relative;
+        right: 60px;
+      }
+    }
+  }
+
+  .text {
+    padding-left: 0;
+    order: 1;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20%;
+  
+    &__name {
+      display: none;
+    }
+  }
+
+  .design {
+
+    &__title {
+      margin: 120px 0 30px;
+    }
+  }
+
+  .color {
+    padding-left: 0;
+    top: 0;
+    text-align: end;
+
+    &__title {
+      margin: 120px 0 30px;
+    }
+
+    &__subtitle {
+      margin-left: 0;
+    }
+
+    &__rounds {
+      padding: 20px 0 30px;
+      float: right;
+    }
+
+    &__img {
+      position: relative;
+      right: 60px;
+    }
+  }
+}
+
+@media (max-width: 479px) {
+  .advantages {
+    position: static;
+    padding: 0;
+
+    &__img {
+      display: none;
+    }
+  }
+
+  .text {
+    display: block;
+  }
+
+  .color {
+
+    &__title {
+      margin: 0 0 20px 100px;
+      font-size: 28px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+
+    &__rounds {
+      display: flex;
+      justify-content: space-evenly;
+      float: none;
+    }
+
+    &__img {
+      right: 20px;
+    }
+  }
+
+  .design {
+
+    &__title {
+      margin-top: 140px;
+      font-size: 28px;
+    }
+  }
+
+  .subtitle-list {
+
+    &__item {
+      font-size: 14px;
+
+      &:not(:first-child)::before {
+        content: "";
+        margin-right: 8px;
+        display: inline-block;
+        width: 20px;
+        height: 5px;
+        background-color: #000;
+      }
+    }
   }
 }

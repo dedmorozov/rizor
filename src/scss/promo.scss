@@ -2,7 +2,6 @@
 @import "content.scss";
 
 .promo {
- max-height: 100vh;
  padding-bottom: 85px;
 
   &__background {
@@ -10,5 +9,11 @@
     left: 0;
     height: 90%;
     z-index: -1;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .promo {
+    padding-bottom: 40px;
   }
 }
