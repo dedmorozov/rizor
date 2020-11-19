@@ -15,5 +15,9 @@
 @media screen and (max-width: 479px) {
   .promo {
     padding-bottom: 40px;
+
+    &__background {
+      height: auto;
+    }
   }
 }

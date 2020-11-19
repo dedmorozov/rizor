@@ -1,6 +1,5 @@
 .characteristics {
   display: flex;
-  padding-top: 400px;
   align-items: center;
 
   &__right-side {
@@ -10,7 +9,6 @@
 }
 
 .modes {
-  // padding-top: 50px;
 
   &__title {
     margin-bottom: 40px;
@@ -92,6 +90,13 @@
 
     &__text {
       font-size: 14px;
+    }
+  }
+
+  .subtitle-list {
+
+    &__item {
+      width: 80%;
     }
   }
 }

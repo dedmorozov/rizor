@@ -79,8 +79,16 @@
     &__for-whom {
       width: auto;
     }
-  }
 
+    &__copyrights {
+
+      &--text {
+        font-size: 10px;
+        line-height: 30px;
+      }
+    }
+  }
+  
   .for-whom {
     
     &__button {

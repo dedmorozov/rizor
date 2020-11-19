@@ -1,17 +1,31 @@
 @import "nav.scss";
+@import "burger.scss";
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
 
-@media screen and (max-width: 767px) {
-  .header {
+  &__logo {
+    outline: none;
+  }
+  
+  &.menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-color: white;
+    z-index: 1;
+  }
 
-    &__logo {
-      margin: 0 auto;
+  &__logo {
+
+    &.menu {
+      display: none;
     }
   }
 }
