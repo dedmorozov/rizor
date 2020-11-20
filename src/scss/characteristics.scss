@@ -9,6 +9,9 @@
 }
 
 .modes {
+  position: relative;
+  left: -100px;
+  opacity: 0;
 
   &__title {
     margin-bottom: 40px;
@@ -22,8 +25,11 @@
   }
 
   &__features {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    bottom: -100px;
+    opacity: 0;
   }
 }
 

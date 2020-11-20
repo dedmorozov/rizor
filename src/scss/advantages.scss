@@ -6,6 +6,8 @@
 
   &__img {
     position: relative;
+    left: -100px;
+    opacity: 0;
   }
 
   &__play-video {
@@ -46,6 +48,9 @@
 }
 
 .design {
+  position: relative;
+  left: -100px;
+  opacity: 0;
 
   &__title {
     margin-bottom: 30px;
@@ -80,6 +85,8 @@
   padding-left: 60px;
   position: relative;
   top: 470px;
+  left: 100px;
+  opacity: 0;
 
   &__title {
     margin: 0 0 20px 100px;

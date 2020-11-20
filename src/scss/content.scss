@@ -8,6 +8,8 @@
 .left-side {
   position: relative;
   top: 50px;
+  opacity: 0;
+  z-index: 1;
 
   &__title {
     font-size: 80px;
@@ -36,6 +38,9 @@
 
 .right-side {
   display: flex;
+  position: relative;
+  opacity: 0;
+  right: -100px;
 
   &__picture {
     position: relative;
@@ -124,7 +129,7 @@
     width: 100%;
     position: absolute;
     top: 470px;
-    left: 270px;
+    left: 370px;
 
     &__picture {
       height: 100%;

@@ -78,7 +78,6 @@
     justify-content: space-evenly;
     width: 40px;
     height: 40px;
-    top: 30px;
     right: 20px;
     align-items: center;
   }
@@ -105,6 +104,8 @@
   }
 }
 .header {
+  position: relative;
+  top: -100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -136,6 +137,8 @@
 .left-side {
   position: relative;
   top: 50px;
+  opacity: 0;
+  z-index: 1;
 }
 .left-side__title {
   font-size: 80px;
@@ -160,6 +163,9 @@
 
 .right-side {
   display: flex;
+  position: relative;
+  opacity: 0;
+  right: -100px;
 }
 .right-side__picture {
   position: relative;
@@ -238,7 +244,7 @@
     width: 100%;
     position: absolute;
     top: 470px;
-    left: 270px;
+    left: 370px;
   }
   .right-side__picture {
     height: 100%;
@@ -282,7 +288,7 @@
 }
 .promo__background {
   position: absolute;
-  left: 0;
+  left: -300px;
   height: 90%;
   z-index: -1;
 }
@@ -303,6 +309,8 @@
 }
 .advantages__img {
   position: relative;
+  left: -100px;
+  opacity: 0;
 }
 .advantages__play-video {
   position: absolute;
@@ -338,6 +346,11 @@
   font-weight: normal;
 }
 
+.design {
+  position: relative;
+  left: -100px;
+  opacity: 0;
+}
 .design__title {
   margin-bottom: 30px;
   font-size: 40px;
@@ -368,6 +381,8 @@
   padding-left: 60px;
   position: relative;
   top: 470px;
+  left: 100px;
+  opacity: 0;
 }
 .color__title {
   margin: 0 0 20px 100px;
@@ -523,6 +538,11 @@
   left: 300px;
 }
 
+.modes {
+  position: relative;
+  left: -100px;
+  opacity: 0;
+}
 .modes__title {
   margin-bottom: 40px;
   font-size: 40px;
@@ -533,8 +553,11 @@
   width: 370px;
 }
 .modes__features {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  bottom: -100px;
+  opacity: 0;
 }
 
 .speed {
@@ -653,7 +676,7 @@
 }
 .footer__picture {
   position: absolute;
-  right: -350px;
+  right: -450px;
   bottom: 100px;
 }
 .footer__background {
@@ -679,10 +702,12 @@
   position: relative;
   width: 25%;
   height: 470px;
+  left: -100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   z-index: 1;
+  opacity: 0;
 }
 .for-whom__text {
   font-weight: 300;
